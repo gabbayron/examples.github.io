@@ -1,5 +1,6 @@
 body {
     background: url('../imgs/tile.jpg');
+    zoom: 125%;
 }
 
 .header > h1 {
