@@ -1,0 +1,108 @@
+body {
+    background: url('../imgs/tile.jpg');
+}
+
+.header > h1 {
+    font-family: 'Tangerine', serif;  
+      text-align: center;
+      color: ivory;
+    font-size: 4em;
+}
+
+.inputs-wrap {
+    background: url('../imgs/formbg.jpg');
+    width: 40%;
+    /* height: 110px; */
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    padding: 16px 10px;
+}
+
+h2 {
+    display: inline;
+    position: absolute;
+    left: 50%;
+    top: 95px;
+    transform: translate(-50%, -50%);
+    font-family: sans-serif, serif;  
+    text-align: center;
+    color: ivory;
+    -webkit-text-stroke: 1px red;
+    font-size: 35px;
+}
+
+input[type=text] {
+    border: 1px solid black;
+    width: 50%;
+    margin: 2px;
+}
+
+input{
+    background: transparent;
+    margin: 2px 0;
+}
+
+
+
+label {
+    width: 150px;
+    display: inline-block;
+    line-height: 30px;
+}
+
+@keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+    }
+    
+.newTodos {
+    display: flex;
+    flex-wrap: wrap;
+    background: url('../imgs/notebg.png') no-repeat;
+    height: 250px;
+    width: 188px;
+    padding: 10px 10px;
+    animation: fadeIn ease 2s;
+}
+
+.newTodos > p:first-of-type {
+    margin: 20px -22px;
+    height: 45%;
+    overflow: auto;
+}
+
+#todo {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+p {
+    width: 150px;
+    word-wrap: break-word;
+}
+.newTodos:hover span {
+    visibility: visible;
+    opacity: 1;
+}
+
+span {
+    position: relative;
+    color: red;
+    font-weight: bold;
+    top: 8px;
+    left: 144px;
+    font-size: 25px;
+    cursor: pointer;
+    height: 10%;
+    transition: opacity  1s;
+    opacity: 0;
+}
+
+#confirm , #reset{
+    position: relative;
+    left: 36%;
+    bottom: 3px;
+    margin: 0 5px;
+}
